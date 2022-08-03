@@ -25,7 +25,7 @@ public class GameManager_Racing : MonoBehaviour
         }
 
         if(FindObjectOfType<FinishTrigger>().winPanel.activeInHierarchy == true){
-        timerText.text = ("You have finished in: " + Mathf.Round(timer) + " sec");
+            timerText.text = ("You have finished in: " + Mathf.Round(timer) + " sec");
         }
 
         pointsText.text = (pointsReady + "/" + maxPoints);

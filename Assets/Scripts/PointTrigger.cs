@@ -10,6 +10,7 @@ public class PointTrigger : MonoBehaviour
         if(other.tag == "Player"){
             gameObject.SetActive(false);
             nextPoint.SetActive(true);
+            FindObjectOfType<GameManager_Racing>().pointsReady++;
         }
     }
 }

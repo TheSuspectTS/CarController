@@ -871,7 +871,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1697935065}
         m_TargetAssemblyTypeName: menu, Assembly-CSharp
-        m_MethodName: Playgame
+        m_MethodName: rases
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -37,5 +37,10 @@ public class menu : MonoBehaviour
         SceneManager.LoadScene("host");
     }
 
+    public void rases()
+    {
+        SceneManager.LoadScene("reses");
+    }
+
 
 }

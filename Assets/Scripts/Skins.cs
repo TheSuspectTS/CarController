@@ -49,6 +49,11 @@ public class Skins : MonoBehaviour
         PlayerPrefsX.SetBoolArray("StockArray", StockCheck);
     }
 
+    public void Spawn()
+    {
+
+    }
+
     public void ScrollRight()
     {
         if (index < player.childCount)

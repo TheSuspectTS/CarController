@@ -119,6 +119,7 @@ public class Skins : MonoBehaviour
                 StockCheck[index] = true;
                 info[index].inStock = true;
                 priceText.text = "bayed";
+                Debug.Log("ssss");
                 Save();
             }
         }

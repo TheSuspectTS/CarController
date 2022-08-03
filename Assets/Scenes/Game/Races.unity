@@ -563,6 +563,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Point (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d578e2513a171074689bbe73c77d44e1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d578e2513a171074689bbe73c77d44e1, type: 3}
 --- !u!4 &357170032 stripped
@@ -1645,7 +1649,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &704670047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3004,6 +3008,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Point (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d578e2513a171074689bbe73c77d44e1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d578e2513a171074689bbe73c77d44e1, type: 3}
 --- !u!4 &1561860851 stripped
@@ -3278,6 +3286,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d578e2513a171074689bbe73c77d44e1, type: 3}
       propertyPath: m_Name
       value: Point (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d578e2513a171074689bbe73c77d44e1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d578e2513a171074689bbe73c77d44e1, type: 3}
@@ -3834,6 +3846,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Point (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d578e2513a171074689bbe73c77d44e1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d578e2513a171074689bbe73c77d44e1, type: 3}
 --- !u!4 &2096094356 stripped
@@ -4069,6 +4085,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d578e2513a171074689bbe73c77d44e1, type: 3}
       propertyPath: m_Name
       value: Point (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d578e2513a171074689bbe73c77d44e1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d578e2513a171074689bbe73c77d44e1, type: 3}

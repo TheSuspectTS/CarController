@@ -15,9 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Game/Races.unity
     guid: d211c3a5d8a1ac54e8cd49df0afbd916
   - enabled: 1
-    path: Assets/Scenes/Menu/ChustomMenu.unity
+    path: Assets/Scenes/Menu/CustomMenu.unity
     guid: 896c6c7abdc46fd4a9e447a925edb92a
   - enabled: 1
-    path: Assets/Scenes/Menu/ModeChoose.unity
+    path: Assets/Scenes/Menu/ModeSelection.unity
     guid: 5dd5578e3afe36945879e156b9d5abf8
   m_configObjects: {}

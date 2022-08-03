@@ -32,9 +32,9 @@ public class menu : MonoBehaviour
         SceneManager.LoadScene("CustomMenu");
     }
 
-    public void ModeChoose()
+    public void ModeSelection()
     {
-        SceneManager.LoadScene("ModeChoose");
+        SceneManager.LoadScene("ModeSelection");
     }
 
     public void Races()

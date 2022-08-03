@@ -6,9 +6,9 @@ public class menu : MonoBehaviour
 {
 
 
-    public void Playgame()
+    public void PlayGame()
     {
-        SceneManager.LoadScene("Demo");
+        SceneManager.LoadScene("FreeWorld");
         Cursor.visible = false;
     }
     public void Playmultipalyer()
@@ -24,22 +24,22 @@ public class menu : MonoBehaviour
 
     public void Back()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("MainMenu");
     }
 
-    public void Chustom()
+    public void CustomMenu()
     {
-        SceneManager.LoadScene("Chustom");
-;    }
-
-    public void Choise()
-    {
-        SceneManager.LoadScene("host");
+        SceneManager.LoadScene("CustomMenu");
     }
 
-    public void rases()
+    public void ModeChoose()
     {
-        SceneManager.LoadScene("reses");
+        SceneManager.LoadScene("ModeChoose");
+    }
+
+    public void Races()
+    {
+        SceneManager.LoadScene("Races");
     }
 
 

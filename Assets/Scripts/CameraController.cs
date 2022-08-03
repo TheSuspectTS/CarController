@@ -98,6 +98,7 @@ namespace RootMotion
 		protected virtual void Update()
 		{
 			if (updateMode == UpdateMode.Update) UpdateTransform();
+			if (FindObjectOfType<FinishTrigger>().winPanel.activeInHierarchy == true) lockCursor = false;
 		}
 
 		protected virtual void FixedUpdate()

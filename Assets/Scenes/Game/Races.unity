@@ -2333,6 +2333,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4945431366835522744, guid: f3b4b3741a9a09d40bfbf188ee35771e, type: 3}
   m_PrefabInstance: {fileID: 995336868}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &996851010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 996851011}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &996851011
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996851010}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.86, y: 0, z: -8.679}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1038854682
 GameObject:
   m_ObjectHideFlags: 0
@@ -2578,6 +2609,7 @@ GameObject:
   - component: {fileID: 1144274277}
   - component: {fileID: 1144274276}
   - component: {fileID: 1144274275}
+  - component: {fileID: 1144274279}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2673,6 +2705,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1144274279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144274274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62f16f4f3de869f4d84f60b48bbed135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterPrefabs:
+  - {fileID: 1906610031665067050, guid: d471b7e2cfe81824db12a4de81652489, type: 3}
+  - {fileID: 1906610031665067050, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
+  spawnPoint: {fileID: 996851011}
+  playerOnScene: 0
 --- !u!1001 &1157752860
 PrefabInstance:
   m_ObjectHideFlags: 0

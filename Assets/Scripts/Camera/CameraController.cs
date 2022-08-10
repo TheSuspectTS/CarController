@@ -19,7 +19,7 @@ namespace RootMotion
 			LateUpdate,
 			FixedLateUpdate
 		}
-
+		public FinishTrigger ft;
 		public Transform target; // The target Transform to follow
 		public Transform rotationSpace; // If assigned, will use this Transform's rotation as the rotation space instead of the world space. Useful with spherical planets.
 		public UpdateMode updateMode = UpdateMode.LateUpdate; // When to update the camera?
@@ -67,7 +67,12 @@ namespace RootMotion
 		private Vector3 lastUp;
 		private float blockedDistance = 10f, blockedDistanceV;
 
-		public void SetAngles(Quaternion rotation)
+        private void Start()
+        {
+			ft = FindObjectOfType<FinishTrigger>();
+        }
+
+        public void SetAngles(Quaternion rotation)
 		{
 			Vector3 euler = rotation.eulerAngles;
 			this.x = euler.y;
@@ -98,21 +103,19 @@ namespace RootMotion
 		protected virtual void Update()
 		{
 			if (updateMode == UpdateMode.Update) UpdateTransform();
-			if(FindObjectOfType<FinishTrigger>() != null)
-            {
-				if (FindObjectOfType<FinishTrigger>().winPanel.activeInHierarchy == true)
-				{
-					lockCursor = false;
-					rotateAlways = false;
-				}
+
+			if (ft.finished)
+			{
+				lockCursor = false;
+				rotateAlways = false;
 			}
-            
-            if (FindObjectOfType<GameMenu>().menuOpened == true)
+
+			if (FindObjectOfType<GameMenu>().menuOpened == true)
             {
                 lockCursor = false;
                 rotateAlways = false;
             }
-            else
+            else if(FindObjectOfType<GameMenu>().menuOpened == false && ft.finished == false)
             {
                 lockCursor = true;
                 rotateAlways = true;

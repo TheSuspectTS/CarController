@@ -7,6 +7,7 @@ public class PointTrigger : MonoBehaviour
     public GameObject nextPoint;
     public GameObject nextPointModel;
     public bool nextFinish = false;
+    public GameManager_Racing gmr;
 
     private void OnTriggerEnter(Collider other) {
         if(nextFinish == true && other.tag == "Player"){
@@ -14,12 +15,14 @@ public class PointTrigger : MonoBehaviour
             nextPoint.SetActive(true);
             nextPointModel.SetActive(true);
             nextPoint.GetComponent<Collider>().enabled = true;
-            FindObjectOfType<GameManager_Racing>().pointsReady++;
+            gmr.money += Random.Range(100, 200);
+            gmr.pointsReady++;
         }
         else if(other.tag == "Player"){
             gameObject.SetActive(false);
             nextPoint.SetActive(true);
-            FindObjectOfType<GameManager_Racing>().pointsReady++;
+            gmr.money += Random.Range(100, 200);
+            gmr.pointsReady++;
         }
     }
 }

@@ -1355,8 +1355,8 @@ MonoBehaviour:
   selectedCharacter: 0
   car2Byed: 0
   car3Byed: 0
-  car2Cost: 500
-  car3Cost: 750
+  car2Cost: 1500
+  car3Cost: 3000
   costText: {fileID: 936491054}
   moneyText: {fileID: 996555930}
   money: 0

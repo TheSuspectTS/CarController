@@ -69,6 +69,7 @@ namespace RootMotion
 
         private void Start()
         {
+			rotationSensitivity = PlayerPrefs.GetFloat("Sens");
 			ft = FindObjectOfType<FinishTrigger>();
         }
 
